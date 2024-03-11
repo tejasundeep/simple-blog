@@ -90,7 +90,7 @@ let MetaHead = ({ title, description, image, metatitle, metadesc }) => {
                     "@id": appUrl,
                 },
                 about: {
-                    "@id": "https://simple-blog.vercel.app/about-us",
+                    "@id": "https://simple-blog-teja.vercel.app/about-us",
                 },
                 primaryImageOfPage: {
                     "@id": appUrl,
