@@ -6,11 +6,13 @@ import SeoUrl from "@/components/others/SeoUrl";
 
 const CarouselComponent = () => {
     const [posts, setPosts] = useState([]);
+    let appUrl = process.env.NEXT_PUBLIC_LOCAL_HOST;
 
     useEffect(() => {
         const fetchPosts = async () => {
             try {
-                const response = await fetch("http://localhost:3000/api/read-post");
+                const response = await fetch(`${appUrl}/api/read-post`);
+
                 if (!response.ok) {
                     throw new Error("Failed to fetch posts");
                 }
@@ -23,7 +25,7 @@ const CarouselComponent = () => {
         };
 
         fetchPosts();
-    }, []);
+    }, [posts, appUrl]);
 
     return (
         <Container fluid className="home_page_carousel">
