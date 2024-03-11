@@ -1,0 +1,12 @@
+[
+    {
+        "source": "/post/what-is-xrps",
+        "destination": "/post/what-is-xrp",
+        "permanent": true
+    },
+    {
+        "source": "/old-url-2",
+        "destination": "/redirects/old-url-2",
+        "permanent": true
+    }
+]
